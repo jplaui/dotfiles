@@ -1,0 +1,58 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/jp/.config/vifm/colors
+	GreenDay.vifm
+5
+d/home/jp/.config/vifm
+	colors
+1
+d/home/jp/.config/vifm/colors
+	..
+0
+d
+
+# Right window history (oldest to newest):
+D/home/jp/.config/vifm/colors
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:set colorscheme Black
+:colorscheme Black
+:colorscheme black
+:exit
+:colorscheme
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
