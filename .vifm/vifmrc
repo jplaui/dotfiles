@@ -4,7 +4,7 @@
 "
 
 " set vicmd=vim\ -u\ ~/.plugs.vimrc\ --servername\ default
-set vicmd=Vim
+set vicmd=vim
 
 " Trash Directory
 " The default is to move files that are deleted with dd or :d to
@@ -56,7 +56,7 @@ set noiec
 
 " Selected color scheme
 
-colorscheme matrix
+colorscheme iceberg
 
 " The FUSE_HOME directory will be used as a root dir for all FUSE mounts.
 " Unless it exists with write/exec permissions set, vifm will attempt to
@@ -233,7 +233,60 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.webp
         \ {View in feh}
         " \ feh -dF %c,
         \ feh -FZ %d --start-at %d/%c 2>/dev/null,
-fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm convert -identify %f -verbose /dev/null
+
+
+" my stuff copied in
+fileviewer *.pdf
+        \ vifmimg pdfpreview %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
+fileviewer *.epub
+        \ vifmimg epubpreview %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
+fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
+        \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
+        \ vifmimg videopreview %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
+fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm
+        \ vifmimg draw %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
+fileviewer *.gif
+        \ vifmimg gifpreview %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
+fileviewer *.ico
+        \ vifmimg magickpreview %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+fileviewer <audio/*>
+        \ vifmimg audiopreview %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
+fileviewer <font/*>
+        \ vifmimg fontpreview %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
+
+" fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm
+"        \ vifmimg draw %px %py %pw %ph %c
+"        \ %pc
+"        \ vifmimg clear
+" fileviewer *.gif
+"        \ vifmimg gifpreview %px %py %pw %ph %c
+"        \ %pc
+"        \ vifmimg clear
+
+" fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm convert -identify %f -verbose /dev/null
 
 " MD5
 filetype *.md5

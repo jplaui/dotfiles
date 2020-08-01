@@ -1,13 +1,25 @@
 # You can edit this file by hand, but it's recommended not to do that.
 
 # Marks:
+'h
+	/home/jp
+	Desktop
+1596241742
+'m
+	/home/jp
+	Desktop
+1596241752
+'n
+	/home/jp/Documents/niove
+	NIoVe__Section1-3_v_20180828_v08.pdf
+1596239279
 
 # TUI:
 al
 q0
 v2
 ov
-m-1
+m46
 l2
 r2
 
@@ -21,22 +33,114 @@ d/home/jp/.config/vifm
 d/home/jp/.config/vifm/colors
 	..
 0
+d/home/jp/.config/vifm
+	colors
+1
+d/home/jp/.config
+	vifm
+35
+d/home/jp
+	Documents
+2
+d/home/jp/Documents
+	niove
+10
+d/home/jp/Documents/niove
+	NIoVe__Section1-3_v_20180828_v08.pdf
+11
+d/home/jp/Documents
+	niove
+10
+d/home/jp
+	Documents
+2
+d/home
+	jp
+1
+d/home/jp
+	Pictures
+9
+d/home/jp/Pictures
+	Screenshot_2020-05-20 c-its_certificate_policy-v1 1 pdf.png
+13
+d/home/jp
+	Pictures
+9
+d/home
+	jp
+1
+d/
+	home
+4
+d/home
+	jp
+1
+d/home/jp
+	Pictures
+9
+d/home/jp/Pictures
+	TLS_1.3_Handshake.png
+22
+d/home/jp
+	Pictures
+9
+d/home/jp/Pictures
+	TLS_1.3_Handshake.png
+22
+d/home/jp
+	Pictures
+9
+d/home/jp/Pictures
+	jan_lauinger.jpeg
+26
+d/home/jp
+	Pictures
+9
+d/home/jp/Pictures
+	..
+0
+d/home/jp
+	2020-01-28-192821_10240x2160_scrot.png
+26
 d
 
 # Right window history (oldest to newest):
 D/home/jp/.config/vifm/colors
 	..
 0
+D/home/jp/Documents/niove
+	roadmap
+14
+D/home/jp/Documents
+	temp-abstract.txt
+23
+D/home/jp
+	Pictures
+9
+D/home/jp/Pictures
+	1280px-Public-key-crypto-1.svg.png
+4
+D/home/jp
+	urgent.txt
+35
+D/home
+	jp
+1
+D/home/jp
+	Desktop
+1
 D
 
 # Command line history (oldest to newest):
 :set colorscheme Black
 :colorscheme Black
 :colorscheme black
-:exit
+:colorscheme dracula
 :colorscheme
+:exit
 
 # Search history (oldest to newest):
+/pictures
 
 # Prompt history (oldest to newest):
 

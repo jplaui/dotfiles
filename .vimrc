@@ -72,6 +72,6 @@ let g:airline_theme='alduin'
 " nmap <F5> :TagbarToggle<CR>
 
 
-
+set t_Co=256
 
 
