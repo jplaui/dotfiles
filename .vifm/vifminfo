@@ -19,7 +19,7 @@ al
 q0
 v2
 ov
-m46
+m39
 l2
 r2
 
@@ -100,8 +100,53 @@ d/home/jp/Pictures
 	..
 0
 d/home/jp
-	2020-01-28-192821_10240x2160_scrot.png
-26
+	Pictures
+9
+d/home/jp/Pictures
+	Screenshot_2020-05-20 c-its_certificate_policy-v1 1 pdf.png
+13
+d/home/jp
+	Pictures
+9
+d/home/jp/Pictures
+	Screenshot_2020-05-20 c-its_certificate_policy-v1 1 pdf.png
+13
+d/home/jp
+	Pictures
+4
+d/home/jp/Pictures
+	Screenshot_2020-05-20 c-its_certificate_policy-v1 1 pdf.png
+13
+d/home/jp
+	Pictures
+9
+d/home/jp/Pictures
+	Public-Key-Infrastructure.svg.png
+4
+d/home/jp
+	Documents
+2
+d/home/jp/Documents
+	paper
+11
+d/home/jp/Documents/paper
+	2009_conference_A-Layered-Architecture-for-Vehicular-Delay-Tolerant-Networks.pdf
+12
+d/home/jp/Documents
+	paper
+11
+d/home/jp
+	Documents
+2
+d/home
+	jp
+1
+d/home/jp
+	Pictures
+9
+d/home/jp/Pictures
+	Screenshot_2020-05-20 uPortlandia.png
+10
 d
 
 # Right window history (oldest to newest):
@@ -138,9 +183,14 @@ D
 :colorscheme dracula
 :colorscheme
 :exit
+:view
+:!evince Public-Key-Infrastructure.svg.png
 
 # Search history (oldest to newest):
 /pictures
+/docu
+/paper
+/picture
 
 # Prompt history (oldest to newest):
 
