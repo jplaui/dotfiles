@@ -1,0 +1,27 @@
+{
+  "directories": [
+    {
+      "id": "3cjLw6OqSlYb",
+      "path": "/home/jp/LRZ Sync+Share/ESI_Cryptomator (Sebastian Steinhorst)/default",
+      "mountName": "default",
+      "unlockAfterStartup": false,
+      "revealAfterMount": true,
+      "useCustomMountPath": false,
+      "usesReadOnlyMode": false,
+      "mountFlags": "",
+      "filenameLengthLimit": 220,
+      "actionAfterUnlock": "IGNORE"
+    }
+  ],
+  "askedForUpdateCheck": true,
+  "checkForUpdatesEnabled": false,
+  "startHidden": false,
+  "port": 42427,
+  "numTrayNotifications": 3,
+  "preferredGvfsScheme": "DAV",
+  "debugMode": false,
+  "preferredVolumeImpl": "FUSE",
+  "theme": "LIGHT",
+  "uiOrientation": "LEFT_TO_RIGHT",
+  "licenseKey": ""
+}

@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/Theme - Arc/Arc Darker.tmTheme",
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"font_size": 19,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"spell_check": true,
+	"theme": "Gravity.sublime-theme"
+}
