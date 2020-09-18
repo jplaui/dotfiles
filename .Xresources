@@ -1,0 +1,13 @@
+xterm*background: black
+xterm*foreground: lightblue
+xterm*alwaysUseMods: true
+xterm*metaSendsEscape: true
+
+xterm*VT100.Translations: #override \
+	Ctrl Shift <Key>V:	insert-selection(CLIPBOARD) \n\
+	Ctrl Shift <Key>C:	copy-selection(CLIPBOARD)
+
+XTerm.vt100.faceName: Liberation Mono:size=10:antialias=false
+XTerm.vt100.font: 7x13
+
+
