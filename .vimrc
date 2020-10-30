@@ -44,6 +44,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'majutsushi/tagbar'
 Plug 'altercation/vim-colors-solarized'
 Plug 'lifepillar/vim-solarized8'
+Plug 'posva/vim-vue'
 
 " Initialize plugin system
 call plug#end()
@@ -69,17 +70,27 @@ map <S-k> 5k
 
 " Setting of variables
 syntax enable
+" set shiftwidth=4
+" set tabstop=4
 colorscheme solarized8
 set background=dark
 set cursorline
+set splitbelow
 " set relativenumber
 let g:ctrlp_map = '<c-p>'
 set list
-set listchars=tab:›\ ,eol:-,trail:⋅
+set listchars=tab:›\ ,trail:⋅
+",eol:-
 set number
 let g:airline_theme='alduin'
 set t_Co=256
 set mouse=a
 let g:tex_flavor = 'latex'
 " set lcs+=space:·
+let g:NERDTreeWinPos = "right"
+
+filetype indent on
+autocmd Filetype typescript setlocal noexpandtab tabstop=4 sw=4 sts=4
+autocmd Filetype vue setlocal noexpandtab tabstop=2 sw=2 sts=2
+let g:vue_pre_processors = ['scss']
 
