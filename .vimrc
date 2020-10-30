@@ -30,11 +30,14 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Unmanaged plugin (manually installed and updated)
 Plug '~/my-prototype-plugin'
 " Awesome color scheme
+Plug 'lervag/vimtex'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-colorscheme-switcher'
-Plug 'suan/vim-instant-markdown'
+" Plug 'suan/vim-instant-markdown'
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-Plug 'kien/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+" Plug 'kien/ctrlp.vim'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
@@ -52,25 +55,31 @@ nnoremap Ö 5<C-w>>
 nnoremap ö 5<C-w><
 map <C-n>        : NERDTreeToggle<CR>
 nnoremap bn      : bn<cr>
-nnoremap bp      : bp<cr>
+nnoremap bm      : bp<cr>
+" nnoremap bp      : bp<cr>
 nnoremap bd      : bd<cr>
 nnoremap <S-Tab> : tabprevious<cr>
 nnoremap <Tab>   : tabnext<cr>
 nnoremap <C-t>   : tabnew<cr>
 nnoremap td      : tabclose<cr>
+noremap <c-s-up> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
+noremap <c-s-down> ddp
+map <S-j> 5j
+map <S-k> 5k
 
 " Setting of variables
 syntax enable
-set background=dark
 colorscheme solarized8
+set background=dark
 set cursorline
-set relativenumber
+" set relativenumber
 let g:ctrlp_map = '<c-p>'
 set list
 set listchars=tab:›\ ,eol:-,trail:⋅
-" set lcs+=space:·
 set number
 let g:airline_theme='alduin'
 set t_Co=256
 set mouse=a
+let g:tex_flavor = 'latex'
+" set lcs+=space:·
 
