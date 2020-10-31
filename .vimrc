@@ -14,7 +14,7 @@ Plug 'junegunn/vim-easy-align'
 " Any valid git URL is allowed
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 " Multiple Plug commands can be written in a single line using | separators
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " On-demand loading
 " Plug 'preservim/nerdtree'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -34,7 +34,7 @@ Plug 'lervag/vimtex'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-colorscheme-switcher'
 " Plug 'suan/vim-instant-markdown'
-Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+" Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Plug 'kien/ctrlp.vim'
