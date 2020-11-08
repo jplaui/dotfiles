@@ -33,6 +33,7 @@ Plug '~/my-prototype-plugin'
 Plug 'lervag/vimtex'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-colorscheme-switcher'
+Plug 'leafgarland/typescript-vim'
 " Plug 'suan/vim-instant-markdown'
 " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -65,8 +66,16 @@ nnoremap <C-t>   : tabnew<cr>
 nnoremap td      : tabclose<cr>
 noremap <c-s-up> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
 noremap <c-s-down> ddp
+" jump lines
 map <S-j> 5j
 map <S-k> 5k
+
+" copy to clipboard
+" isntall vim-gtk and xclip
+set clipboard^=unnamed,unnamedplus
+set guioptions+=a
+vmap <F6> :!xclip -f -sel clip<CR>
+map <F7> :-1r !xclip -o -sel clip<CR>
 
 " Setting of variables
 syntax enable
