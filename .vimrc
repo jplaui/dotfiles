@@ -100,6 +100,7 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 "  4 -> solid underscore
 "  5 -> blinking vertical bar
 "  6 -> solid vertical bar
+"
 ",eol:-
 set number
 let g:airline_theme='alduin'
@@ -111,6 +112,7 @@ let g:NERDTreeWinPos = "right"
 
 filetype indent on
 autocmd Filetype typescript setlocal noexpandtab tabstop=4 sw=4 sts=4
+autocmd Filetype python setlocal expandtab tabstop=4 sw=4 sts=4
 autocmd Filetype vue setlocal noexpandtab tabstop=2 sw=2 sts=2
 let g:vue_pre_processors = ['scss']
 
