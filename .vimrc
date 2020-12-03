@@ -89,6 +89,17 @@ set splitbelow
 let g:ctrlp_map = '<c-p>'
 set list
 set listchars=tab:›\ ,trail:⋅
+" Mode Setting
+let &t_SI.="\e[6 q" "SI = INSERT mode
+let &t_SR.="\e[1 q" "SR = REPLACE mode
+let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
+"Cursor settings:
+"  1 -> blinking block
+"  2 -> solid block
+"  3 -> blinking underscore
+"  4 -> solid underscore
+"  5 -> blinking vertical bar
+"  6 -> solid vertical bar
 ",eol:-
 set number
 let g:airline_theme='alduin'
