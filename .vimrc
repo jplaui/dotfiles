@@ -2,6 +2,8 @@
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
+let g:polyglot_disabled = ['autoindent']
+
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
@@ -39,13 +41,16 @@ Plug 'leafgarland/typescript-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Plug 'kien/ctrlp.vim'
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'bling/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'majutsushi/tagbar'
 Plug 'altercation/vim-colors-solarized'
 Plug 'lifepillar/vim-solarized8'
 Plug 'posva/vim-vue'
+Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
+Plug 'vim-scripts/Wombat'
 
 " Initialize plugin system
 call plug#end()
@@ -82,7 +87,7 @@ syntax enable
 " set shiftwidth=4
 " set tabstop=4
 colorscheme solarized8
-set background=dark
+" set background=dark
 set cursorline
 set splitbelow
 " set relativenumber
@@ -103,8 +108,9 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 "
 ",eol:-
 set number
-let g:airline_theme='alduin'
+" let g:airline_theme='alduin'
 set t_Co=256
+set termguicolors
 set mouse=a
 let g:tex_flavor = 'latex'
 " set lcs+=space:·
@@ -115,4 +121,11 @@ autocmd Filetype typescript setlocal noexpandtab tabstop=4 sw=4 sts=4
 autocmd Filetype python setlocal expandtab tabstop=4 sw=4 sts=4
 autocmd Filetype vue setlocal noexpandtab tabstop=2 sw=2 sts=2
 let g:vue_pre_processors = ['scss']
+
+let g:lightline = { 'colorscheme': 'wombat'}
+set laststatus=2
+if !has('gui_running')
+  set t_Co=256
+endif
+" set noshowmode
 
