@@ -51,7 +51,7 @@ Plug 'posva/vim-vue'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/Wombat'
-
+Plug 'arcticicestudio/nord-vim'
 " Initialize plugin system
 call plug#end()
 
@@ -74,6 +74,8 @@ noremap <c-s-down> ddp
 " jump lines
 map <S-j> 5j
 map <S-k> 5k
+" html uncomment
+nnoremap <C-h> : s/^\(.*\)$/<!-- \1 -->/
 
 " copy to clipboard
 " isntall vim-gtk and xclip
@@ -86,7 +88,8 @@ map <F7> :-1r !xclip -o -sel clip<CR>
 syntax enable
 " set shiftwidth=4
 " set tabstop=4
-colorscheme solarized8
+" colorscheme solarized8
+colorscheme wombat
 " set background=dark
 set cursorline
 set splitbelow
@@ -118,6 +121,8 @@ let g:NERDTreeWinPos = "right"
 
 filetype indent on
 autocmd Filetype typescript setlocal noexpandtab tabstop=4 sw=4 sts=4
+autocmd Filetype javascript setlocal noexpandtab tabstop=4 sw=4 sts=4
+autocmd Filetype svelte setlocal noexpandtab tabstop=4 sw=4 sts=4
 autocmd Filetype python setlocal expandtab tabstop=4 sw=4 sts=4
 autocmd Filetype vue setlocal noexpandtab tabstop=2 sw=2 sts=2
 let g:vue_pre_processors = ['scss']
@@ -128,4 +133,10 @@ if !has('gui_running')
   set t_Co=256
 endif
 " set noshowmode
+" tmux
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
+
+
 
