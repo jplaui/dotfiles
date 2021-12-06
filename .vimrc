@@ -1,4 +1,3 @@
-
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
@@ -7,51 +6,56 @@ let g:polyglot_disabled = ['autoindent']
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-commentary'
+
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
+
 " Any valid git URL is allowed
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
 " Multiple Plug commands can be written in a single line using | separators
 " Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
 " On-demand loading
-" Plug 'preservim/nerdtree'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
 " Using a non-master branch
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 Plug 'fatih/vim-go', { 'tag': '*' }
+
 " Plugin options
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
 " Unmanaged plugin (manually installed and updated)
 Plug '~/my-prototype-plugin'
+
 " Awesome color scheme
 Plug 'lervag/vimtex'
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-colorscheme-switcher'
 Plug 'leafgarland/typescript-vim'
-" Plug 'suan/vim-instant-markdown'
-" Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'flazz/vim-colorschemes'
+Plug 'xolox/vim-colorscheme-switcher'
+
+
+" Additional Add-ons
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Plug 'kien/ctrlp.vim'
-" Plug 'bling/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'majutsushi/tagbar'
 Plug 'altercation/vim-colors-solarized'
-Plug 'lifepillar/vim-solarized8'
-Plug 'posva/vim-vue'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
-Plug 'vim-scripts/Wombat'
-Plug 'arcticicestudio/nord-vim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -88,15 +92,16 @@ map <F7> :-1r !xclip -o -sel clip<CR>
 syntax enable
 " set shiftwidth=4
 " set tabstop=4
-" colorscheme solarized8
-colorscheme wombat
+colorscheme afterglow
 " set background=dark
 set cursorline
 set splitbelow
+
 " set relativenumber
 let g:ctrlp_map = '<c-p>'
 set list
 set listchars=tab:›\ ,trail:⋅
+
 " Mode Setting
 let &t_SI.="\e[6 q" "SI = INSERT mode
 let &t_SR.="\e[1 q" "SR = REPLACE mode
@@ -113,30 +118,29 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 set number
 " let g:airline_theme='alduin'
 set t_Co=256
-set termguicolors
+" set termguicolors
 set mouse=a
 let g:tex_flavor = 'latex'
 " set lcs+=space:·
 let g:NERDTreeWinPos = "right"
 
+" File rendering
 filetype indent on
 autocmd Filetype typescript setlocal noexpandtab tabstop=4 sw=4 sts=4
 autocmd Filetype javascript setlocal noexpandtab tabstop=4 sw=4 sts=4
 autocmd Filetype svelte setlocal noexpandtab tabstop=4 sw=4 sts=4
 autocmd Filetype python setlocal expandtab tabstop=4 sw=4 sts=4
 autocmd Filetype vue setlocal noexpandtab tabstop=2 sw=2 sts=2
-let g:vue_pre_processors = ['scss']
 
-let g:lightline = { 'colorscheme': 'wombat'}
 set laststatus=2
 if !has('gui_running')
   set t_Co=256
 endif
 " set noshowmode
+
 " tmux
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-set termguicolors
-
+" set termguicolors
 
 
